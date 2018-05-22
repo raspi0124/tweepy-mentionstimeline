@@ -13,4 +13,4 @@ api = tweepy.API(auth)
 
 for mentions in tweepy.Cursor(api.mentions_timeline).items():
     # process mentions here
-    print(mentions.entities.user_mentions.id)
+    print(mentions.text)
